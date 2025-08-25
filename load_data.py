@@ -9,4 +9,4 @@ val_data = meetingbank['validation']
 # easy generator
 def generator(data_split):
   for instance in data_split:
-    yiled instance['id'], instance['summary'], instance['transcript']
+    yield instance['id'], instance['summary'], instance['transcript']
